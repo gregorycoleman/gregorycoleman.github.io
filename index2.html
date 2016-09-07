@@ -9,6 +9,11 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<script type="text/javascript">
+$('#connect-button').click(function(){
+      $('#formspree').toggle('slow');
+  });
+</script>
 	</head>
 	<body>
 
@@ -31,8 +36,8 @@
 					<div class="row 150%">
 						<div class="6u 12u$(medium)">
 							<header class="major">
-								<h2>My Passion Projects<br />
-								.. stuff I care about.</h2>
+								<h2>My Passion Projects<h2 />
+								<h2>....stuff I care about.</h2>
 							</header>
 							<p>Most developers will say what they like to do. I will tell you what I am passionate about.</p>
 							<p><strong>Solving Problems</strong>. I have been a consultant and I have done work in a huge amount of frameworks and langualges. The thing that keeps me going is solving a problem and seeing the results</p>
@@ -40,7 +45,7 @@
 							<p><strong>Learning.</strong>I really like to learn new thigns. I take Grad classes from time to time just to keep up my skill set.</p>
 						</div>
 						<div class="6u$ 12u$(medium) important(medium)">
-							<span class="image fit"><img src="images/pic01.jpg" alt="" /></span>
+							<span class="image fit"><img src="images/cafe-overhead-small.jpg" alt="" /></span>
 						</div>
 					</div>
 				</div>
@@ -85,27 +90,27 @@
 					<p>This is not a portfolio to show off my work, but a portfolio to pass along some things I think are usefull.</p>
 					<div class="row 150%">
 						<div class="4u 12u$(medium)">
-							<span class="image fit"><img src="images/pic02.jpg" alt="" /></span>
+							<span class="image fit"><img src="images/docker.png" alt="" /></span>
 							<h3>Docker & Microservices</h3>
 							<p>Docker is cool. Microservices are cool. I have shared some of my Docker images for microservices are shared on Docker Hub.</p>
 							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
+								<li><a href="https://hub.docker.com/r/gregcoleman/" target="_docker" class="button">More</a></li>
 							</ul>
 						</div>
 						<div class="4u 12u$(medium)">
-							<span class="image fit"><img src="images/pic03.jpg" alt="" /></span>
+							<span class="image fit"><img src="images/writing.jpg"  alt="" /></span>
 							<h3>Writing On Medium</h3>
 							<p>I like to write, I wish I had more time to write. When I do write, I write on Medium, so take at some of my posts over there.</p>
 							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
+								<li><a href="https://medium.com/@gcoleman" target="_medium" class="button">More</a></li>
 							</ul>
 						</div>
 						<div class="4u$ 12u$(medium)">
-							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
+							<span class="image fit"><img src="images/karma.jpg" alt="" /></span>
 							<h3>Diversity</h3>
 							<p>I publish some lists on diversity on my GitHub account as well as pro-bono work for non-profits working to increase diversity in tech..</p>
 							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
+								<li><a href="https://github.com/gregorycoleman" target="_cgit" class="button">More</a></li>
 							</ul>
 						</div>
 					</div>
@@ -119,16 +124,28 @@
 						<h2>Want to connect?</h2>
 					</header>
 					
-					<ul class="actions uniform">
+					<div id="connect-button">
+						<ul class="actions uniform">
 						<li><a href="#" class="button special">Hire Me</a></li>
 						<li><a href="#" class="button">Contact Me</a></li>
 					</ul>
+					</div>
 					<p>Hint: Both the buttons go to the same place, so just click either one.</p>
+					<!--
+					<div id="formspree">
+						<form method="POST" action="http://formspree.io/gregory.m.coleman@gmail.com">
+							<input type="email" name="email" placeholder="Your email">
+							<textarea name="message" placeholder="Your message"></textarea>
+							<button type="submit">Send</button>
+						</form>
+					</div>
+					-->
 				</div>
 			</section>
 
 		<!-- Five -->
 		<!--
+
 			<section id="five" class="main style1">
 				<div class="container">
 					<header class="major special">
@@ -445,6 +462,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				</div>
 			</section>
+
 		-->
 
 		<!-- Footer -->
@@ -459,8 +477,13 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					<li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
 				</ul>
 				<ul class="copyright">
-					<li>&copy; Greg Coleman</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					<li>&copy; Greg Coleman</li>
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					<li>Some images from WOCinTech Chat</li>
+					
+					<li>Some Images by Seemi Peltoniemi<li>
 				</ul>
+				
 			</section>
 
 		<!-- Scripts -->
